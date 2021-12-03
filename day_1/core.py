@@ -1,5 +1,6 @@
 import os
 
+
 def read_data():
     """
     Don't want to read file more than once.
@@ -8,6 +9,7 @@ def read_data():
     with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '_res/input.txt'), 'r') as fp:
         # -- Convert to ints.  One data entry per line.
         return [int(x) for x in fp.readlines()]
+
 
 def part_1(data):
     """
